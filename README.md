@@ -1,23 +1,20 @@
 # Craftycle 
 ---
 Table of contents
-[1. Introduction](#introduction)  
+[1. Introduction](#introduction)
 [2. Requirement](#requirements)
 [3. Setup](#setup)
 [4. Testing with Postman](#tesing)
 
 ## 1. Introduction
----
 A Maven-based project for Craftycle Java EE backend.
 
 ## 2. Requirements
----
   * Netbeans IDE  
   * JDK 1.8+  
   * Apache Maven(Bundled in Netbeans)
 
 ## 3. Setup
----
 
 1. Clone the project to your computer.
 2. Open Netbeans, select File -> Open Project... -> Select the cloned project.
@@ -26,10 +23,9 @@ A Maven-based project for Craftycle Java EE backend.
 ...Notes: The image directory should be writeable since we are going to send images from our iOS client. And the directory should ends with `/`.
 4. You need a pre-set of images to run the projects. Download the (these images)[https://drive.google.com/drive/folders/1eO9lSLOKPpmJRHhv8HprEgqXbwj5_Qa-?usp=sharing] and put them into the previous image directory you just defined.
 5. Hit run and play
-6. Optional. In case you are not able to deploy onto your server. Replace your server with (this one)
+6. Optional. In case you are not able to deploy onto your server. Replace your server with (this one)[https://drive.google.com/file/d/1ai-AuNW93JoBlNoA7n-N0aOSbzLu9IDJ/view?usp=sharing]
 
 ## 4. Testing with PostMan
----
 When the project is running, fire up your Postman
 
 1. `GET` all categories: Make a Get request to this url: `http://localhost:8080/CategoryApp/webresources/categories`.

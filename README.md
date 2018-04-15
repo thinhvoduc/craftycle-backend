@@ -1,6 +1,6 @@
 # Craftycle 
 ---
-Table of contents
+Table of contents  
 [1. Introduction](#introduction)  
 [2. Requirement](#requirements)  
 [3. Setup](#setup)  
@@ -21,9 +21,9 @@ A Maven-based project for Craftycle Java EE backend.
 3. Open `ImageFileManager.java` in `com.categoryapp.resources.utils`.  
 ...In `storageFilePath()` method, it currently returns `"/Users/thinh/Documents/images/"`, replace the the image directory on your machine.  
 ...Notes: The image directory should be writeable since we are going to send images from our iOS client. And the directory should ends with `/`.  
-4. You need a pre-set of images to run the projects. Download the (these images)[https://drive.google.com/drive/folders/1eO9lSLOKPpmJRHhv8HprEgqXbwj5_Qa-?usp=sharing] and put them into the previous image directory you just defined.  
+4. You need a pre-set of images to run the projects. Download the [these images](https://drive.google.com/drive/folders/1eO9lSLOKPpmJRHhv8HprEgqXbwj5_Qa-?usp=sharing) and put them into the previous image directory you just defined.  
 5. Hit run and play  
-6. Optional. In case you are not able to deploy onto your server. Replace your server with (this one)[https://drive.google.com/file/d/1ai-AuNW93JoBlNoA7n-N0aOSbzLu9IDJ/view?usp=sharing]  
+6. Optional. In case you are not able to deploy onto your server. Replace your server with [this one](https://drive.google.com/file/d/1ai-AuNW93JoBlNoA7n-N0aOSbzLu9IDJ/view?usp=sharing)  
 
 ## 4. Testing with PostMan
 When the project is running, fire up your Postman  

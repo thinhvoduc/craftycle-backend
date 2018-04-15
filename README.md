@@ -20,7 +20,7 @@ A Maven-based project for Craftycle Java EE backend.
 2. Open Netbeans, select File -> Open Project... -> Select the cloned project.  
 3. Open `ImageFileManager.java` in `com.categoryapp.resources.utils`.  
    In `storageFilePath()` method, it currently returns `"/Users/thinh/Documents/images/"`, replace the the image directory on your machine.   
-   Notes: The image directory should be writeable since we are going to send images from our iOS client. And the directory should ends with `/`.  
+   Notes: The image directory should be writeable since we are going to send images from our iOS client. And the directory should end with `/`.  
 4. You need a pre-set of images to run the projects. Download the [these images](https://drive.google.com/drive/folders/1eO9lSLOKPpmJRHhv8HprEgqXbwj5_Qa-?usp=sharing) and put them into the previous image directory you just defined.   
 5. Hit run and play.    
 6. Optional. In case you are not able to deploy onto your server. Replace your server with [this one](https://drive.google.com/file/d/1ai-AuNW93JoBlNoA7n-N0aOSbzLu9IDJ/view?usp=sharing).  

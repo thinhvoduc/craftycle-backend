@@ -33,6 +33,9 @@ public class ApplicationConfig extends Application {
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.categoryapp.resources.CategoryResource.class);
         resources.add(com.categoryapp.resources.ImagesResource.class);
+        resources.add(com.categoryapp.resources.ItemsResource.class);
+        resources.add(com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider.class);
+        resources.add(com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider.class);
     }
     
 }

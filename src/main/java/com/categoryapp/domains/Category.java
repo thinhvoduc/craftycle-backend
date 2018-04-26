@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author thinh
  */
 @XmlRootElement
-public class Category {
+public class Category implements IdentifiableElement {
     
     private Integer id;
     private String name;

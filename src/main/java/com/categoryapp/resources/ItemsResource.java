@@ -13,6 +13,7 @@ import com.categoryapp.exceptions.MissingParamException;
 import com.categoryapp.resources.utils.ImageFileManager;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 import java.util.UUID;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
@@ -22,6 +23,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
@@ -43,8 +45,10 @@ public class ItemsResource {
     
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getJson() {
-        return Response.status(200).entity("asd").build();
+    public Response getAllItems() {
+        List<Item> items = Database.getInstance().getAllItems();
+        GenericEntity<List<Item>> genericEntity = new GenericEntity<List<Item>>(items){};
+        return Response.status(200).entity(genericEntity).build();
     }
     
     @POST
@@ -78,7 +82,8 @@ public class ItemsResource {
             item.setImageUrl(imageURI);
         }
         
-        
+        // Save to database
+        Database.getInstance().addItem(item);
         
         return Response.status(200).entity(item).build();
     }
